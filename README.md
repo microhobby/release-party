@@ -1,4 +1,3 @@
-# RELEASE PARTY
 # Dependencies
 
 > ⚠️ Make sure you have the following dependencies installed
