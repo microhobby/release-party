@@ -1,0 +1,6 @@
+[
+    {
+        "source": "releaseDemo.Skia.Gtk/releaseDemo.Skia.Gtk.csproj",
+        "target": "$projectName.Skia.Gtk/$projectName.Skia.Gtk.csproj"
+    }
+]
