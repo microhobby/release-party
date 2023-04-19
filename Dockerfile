@@ -35,7 +35,7 @@ dotnet publish -c Release -r linux-${IMAGE_ARCH} --no-self-contained
 
 # DEPLOY -----------------------------------------------------------------------
 FROM --platform=linux/${IMAGE_ARCH} \
-    torizon/debian:${BASE_VERSION} AS Deploy
+    torizon/dotnet-uno:${BASE_VERSION} AS Deploy
 
 ARG IMAGE_ARCH
 ARG APP_EXECUTABLE
