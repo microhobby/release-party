@@ -322,7 +322,8 @@
                 "${workspaceFolder}",
                 "${command:docker_registry}",
                 "${command:docker_tag}",
-                "mydemo"
+                "mydemo",
+                "${command:torizon_gpu}"
             ],
             "dependsOrder": "sequence",
             "icon": {

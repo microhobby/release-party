@@ -192,22 +192,22 @@ Get-ChildItem -Force -File -Recurse * | ForEach-Object {
             if ($_ -isnot [System.IO.DirectoryInfo]) {
                 ( Get-Content $a ) |
                 ForEach-Object {
-                    $_ -replace "myDemo",$projectName
+                    $_ -replace "__change__",$projectName
                 } | Set-Content $a
 
                 ( Get-Content $a ) |
                 ForEach-Object {
-                    $_ -replace "mydemo",$containerName
+                    $_ -replace "__container__",$containerName
                 } | Set-Content $a
 
                 ( Get-Content $a ) |
                 ForEach-Object {
-                    $_ -replace "/home/andreriesco",$env:HOME
+                    $_ -replace "__home__",$env:HOME
                 } | Set-Content $a
                 
                 ( Get-Content $a ) |
                 ForEach-Object {
-                    $_ -replace "dotnetUno", $templateName
+                    $_ -replace "__templateFolder__", $templateName
                 } | Set-Content $a
             }
         } elseif (-not $a.Contains("id_rsa.pub")) {
