@@ -1,0 +1,6 @@
+[
+    {
+        "source": "myDemo.Skia.Gtk/myDemo.csproj",
+        "target": "$projectName.Skia.Gtk/$projectName.csproj"
+    }
+]
